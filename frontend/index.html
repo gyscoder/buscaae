@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Book Finder</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-900 text-white min-h-screen">
+
+<div class="max-w-4xl mx-auto p-6">
+
+  <h1 class="text-4xl font-bold mb-6 text-center">
+    📚 Book Dork Search
+  </h1>
+
+  <!-- FORM -->
+  <div class="bg-gray-800 p-6 rounded-xl space-y-4">
+
+    <input id="title" placeholder="Nome do livro"
+      class="w-full p-3 rounded bg-gray-700">
+
+    <input id="frase" placeholder="Alguma frase que lembra..."
+      class="w-full p-3 rounded bg-gray-700">
+
+    <input id="author" placeholder="Autor"
+      class="w-full p-3 rounded bg-gray-700">
+
+    <input id="publisher" placeholder="Editora"
+      class="w-full p-3 rounded bg-gray-700">
+
+    <input id="year" placeholder="Ano"
+      class="w-full p-3 rounded bg-gray-700">
+
+    <input id="filetypes" placeholder="Tipos (pdf,epub,mobi)"
+      class="w-full p-3 rounded bg-gray-700">
+
+    <input id="site" placeholder="site (google.com, drive.google.com, etc)"
+      class="w-full p-3 rounded bg-gray-700">
+
+    <button onclick="searchBooks()"
+      class="w-full bg-blue-600 hover:bg-blue-700 p-3 rounded font-bold">
+      🔎 Buscar
+    </button>
+
+  </div>
+
+  <!-- STATUS -->
+  <p id="status" class="mt-4 text-gray-400"></p>
+  <!--DORK USADA-->
+  <p id="dorkUsed" class="text-green-400 mt-2"></p>
+  <!-- RESULTADOS -->
+  <div id="results" class="mt-6 space-y-4"></div>
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>

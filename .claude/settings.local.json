@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(dir:*)",
+      "Bash(findstr:*)",
+      "Bash(chmod +x \"C:\\\\Users\\\\Geygih\\\\Desktop\\\\buscador.pdf.online.freenet\\\\validate_and_test.sh\")",
+      "Bash(\"C:\\\\Users\\\\Geygih\\\\Desktop\\\\buscador.pdf.online.freenet\\\\validate_and_test.sh\")"
+    ]
+  }
+}

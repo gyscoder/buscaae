@@ -1,0 +1,25 @@
+version: "3.9"
+services:
+  api:
+    build: .
+    container_name: book_api
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./app:/app/app
+      - ./requirements.txt:/app/requirements.txt:ro
+    env_file:
+      - .env
+    depends_on:
+      - searxng
+    # Uncomment the following line for development with auto-reload
+    # command: uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
+
+  searxng:
+    image: searxng/searxng
+    container_name: searxng
+    ports:
+      - "8080:8080"
+    # Environment variables for searxng can be added here if needed
+    # environment:
+    #   - BASE_URL=http://localhost:8080
